@@ -1,0 +1,27 @@
+{
+  "info": {
+    "name": "Express CRUD API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET All Items",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/items"
+      }
+    },
+    {
+      "name": "POST New Item",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:3000/items",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"New Item\",\n  \"description\": \"From Postman\"\n}"
+        }
+      }
+    }
+    // Add other endpoints similarly...
+  ]
+}
